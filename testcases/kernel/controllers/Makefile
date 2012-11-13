@@ -29,6 +29,10 @@ LIBDIR			:= libcontrollers
 LIB			:= $(LIBDIR)/libcontrollers.a
 FILTER_OUT_DIRS		:= $(LIBDIR)
 
+ifeq ($(ENBALE_ARC_SUPPORT), yes)
+FILTER_OUT_DIRS += cpuset
+endif
+
 $(LIBDIR):
 	mkdir -p "$@"
 
