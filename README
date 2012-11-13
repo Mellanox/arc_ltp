@@ -17,7 +17,7 @@ them at once provide --enable-arc-support flag to ./configure command.
 
 * controllers/cpuset
 * security/tomoyo
-* syscalls/clock_nanosleep
+* syscalls/clock_nanosleep (also must be disable in ./runtest/syscalls)
 
 
 ### Tests with changed parameters
