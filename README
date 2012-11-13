@@ -1,0 +1,21 @@
+# Linux Test Project for ARC Linux
+
+For details about LTP see README.ltp and http://ltp.sourceforge.net/
+For details about ARC processors see http://www.synopsys.com/dw/ipdir.php?ds=arc_770d
+
+Not all tests from LTP suite are applicable to ARC Linux which is an embedded
+system based on uClibc and BusyBox. So some of the tests need to be disabled in
+order for LTP to build and run succesfully.
+
+
+## Modifications to Original LTP
+
+### Unbuildable Tests
+
+This tests cannot be build by ARC Linux uClibc Toolchain (as of version 4.4). To disable all of
+them at once provide --enable-arc-support flag to ./configure command.
+
+* controllers/cpuset
+* security/tomoyo
+* syscalls/clock_nanosleep
+
