@@ -8,9 +8,9 @@ system based on uClibc and BusyBox. So some of the tests need to be disabled in
 order for LTP to build and run succesfully.
 
 
-## Modifications to Original LTP
+## Modifications to original LTP
 
-### Unbuildable Tests
+### Tests that cannot be built
 
 These tests cannot be build by ARC Linux uClibc Toolchain (as of version 4.4). To disable all of
 them at once provide --enable-arc-support flag to ./configure command.
@@ -31,4 +31,6 @@ are too big for an embedded system.
 * math/float_iperb - with default parameters take too much time to finish
 * math/float_power - with default parameters take too much time to finish
 * math/float_trigo - with default parameters take too much time to finish
+* syscalls/fork13 - change value of -i from 1000000 to 10000 so it will take
+  bearable amount of time to complete	
 
