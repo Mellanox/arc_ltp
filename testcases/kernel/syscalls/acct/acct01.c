@@ -81,11 +81,13 @@ static void setup(void)
 
 	/* turn off acct, so we are in a known state */
 	if (acct(NULL) == -1) {
-		if (errno == ENOSYS)
-			tst_brkm(TCONF, cleanup,
+		if (errno == ENOSYS) {
+			tst_resm(TCONF,
 			    "BSD process accounting is not configured in this "
 			    "kernel");
-		else
+			tst_resm(TCONF, "Test will not run.");
+			tst_exit();
+		} else
 			tst_brkm(TBROK|TERRNO, cleanup, "acct(NULL) failed");
 	}
 }

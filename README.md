@@ -108,4 +108,6 @@ should be disabled.
   ANON_GRAN_PAGES_MAX in test source code must be changed to 16U instead of 32U.
 * sched/pth_str02 - this test will fail with current paramter "-n 1000" until
   STAR 9000579074 will be fixed
+* syscalls/acct01 - will fail if BSD process accounting isn't enabled. Test
+  source has been changes so test won't run if it isn't applicable.
 
