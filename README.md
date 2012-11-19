@@ -63,6 +63,17 @@ These tests cause system to crash or hung so they must be disabled.
 These tests are not applicable to ARC Linux but are reported as failed, so they
 should be disabled.
 
+* commands/ar - command is unsupported on ARC Linux
+* commands/ld - command is unsupported on ARC Linux
+* commands/ldd - command is unsupported on ARC Linux
+* commands/nm - command is unsupported on ARC Linux
+* commands/objdump - command is unsupported on ARC Linux
+* commands/file - command is unsupported on ARC Linux
+* commands/tar - test uses `file` command which is unsupported on ARC Linux
+* commands/cron - command is unsupported on ARC Linux
+* commands/logrotate - command is unsupported on ARC Linux
+* commands/cpio - test uses `file` command which is unsupported on ARC Linux
+* commands/gzip01 - gzip in BusyBox doesn't support option `-r`
 * fs/rwtest01 - this test requires BASH which isn't available
 * fs/rwtest02 - this test requires BASH which isn't available
 * fs/rwtest03 - this test requires BASH which isn't available
