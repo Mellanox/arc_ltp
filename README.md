@@ -110,4 +110,8 @@ should be disabled.
   STAR 9000579074 will be fixed
 * syscalls/acct01 - will fail if BSD process accounting isn't enabled. Test
   source has been changes so test won't run if it isn't applicable.
+* syscalls/epoll_create1_01 - epoll is disabled in ARC Linux by default but can
+  be switched on.
+* syscalls/epoll01 - epoll is disabled in ARC Linux by default but can be
+  switched on.
 
