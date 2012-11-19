@@ -77,5 +77,8 @@ should be disabled.
 ## Notes
 
 * sched/pth_str02 - This test will fail with current paramter "-n 1000" until
-  STAR 9000579074 will be fixed.
+  STAR 9000579074 will be fixed
+* fs/fs_racer* - These tests are written for bash which isn't available however
+  they doesn't use syntax unsupported by BusyBox so they run nicely if `bash`
+  is replaced with `sh`.
 
