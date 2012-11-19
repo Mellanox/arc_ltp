@@ -8,6 +8,16 @@ system based on uClibc and BusyBox. So some of the tests need to be disabled in
 order for LTP to build and run succesfully.
 
 
+## Build instructions
+
+```
+git clone git://github.com/anthony-kolesov/arc_ltp.git
+cd arc_ltp
+./configure --host=arc-linux-uclibc CC=arc-linux-uclibc-gcc --enable-arc-support CFLAGS="-Dlinux -DUCLINUX"
+make
+sudo make install
+```
+
 ## Modifications to original LTP
 
 ### Tests that cannot be built
