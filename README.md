@@ -85,6 +85,7 @@ should be disabled.
 * fs_bind/BindMounts - this test requires BASH which isn't available
 * io/aio01 - asynchronous IO isn't supported by uClibc
 * io/aio02 - asynchronous IO isn't supported by uClibc
+* numa/Numa-testcases - test requires command `numactl`
 
 
 ## Notes
