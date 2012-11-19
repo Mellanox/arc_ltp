@@ -63,8 +63,15 @@ These tests cause system to crash or hung so they must be disabled.
 These tests are not applicable to ARC Linux but are reported as failed, so they
 should be disabled.
 
-* io/aio01 - asynchronous IO is not supported by uClibc
-* io/aio02 - asynchronous IO is not supported by uClibc
+* fs/rwtest01 - this test requires BASH which isn't available
+* fs/rwtest02 - this test requires BASH which isn't available
+* fs/rwtest03 - this test requires BASH which isn't available
+* fs/rwtest04 - this test requires BASH which isn't available
+* fs/rwtest05 - this test requires BASH which isn't available
+* fs/iogen01 - this test requires BASH which isn't available
+* fs_bind/BindMounts - this test requires BASH which isn't available
+* io/aio01 - asynchronous IO isn't supported by uClibc
+* io/aio02 - asynchronous IO isn't supported by uClibc
 
 
 ## Notes
