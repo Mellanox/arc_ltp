@@ -92,6 +92,7 @@ should be disabled.
 * fs_bind/BindMounts - this test requires BASH which isn't available
 * io/aio01 - asynchronous IO isn't supported by uClibc
 * io/aio02 - asynchronous IO isn't supported by uClibc
+* mm/mtest06_2 - test requires 1 GiB of RAM but board has only 512 MiB
 * numa/Numa-testcases - test requires command `numactl`
 
 
