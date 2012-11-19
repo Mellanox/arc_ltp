@@ -43,6 +43,11 @@ are too big for an embedded system.
 * math/float_trigo - with default parameters take too much time to finish
 * syscalls/fork13 - change value of -i from 1000000 to 10000 so it will take
   bearable amount of time to complete	
+* sched/hackbench01 - reduce number of iterations to reduce run time. Reduce
+  number of processes because ARC doesn't support more than 4096 processes at
+  one time.
+* sched/hackbench02 - ARC Linux has problems if amount of threads in one
+  process is more that 380.
 
 ### Fatal tests
 
@@ -50,4 +55,10 @@ These tests cause system to crash or hung so they must be disabled.
 
 * syscalls/sendfile04 - it is required to find why this tests causes system to hang
 * syscalls/sendfile04_64 - it is required to find why this tests causes system to hang.
+
+
+## Notes
+
+* sched/pth_str02 - This test will fail with current paramter "-n 1000" until
+  STAR 9000579074 will be fixed.
 
