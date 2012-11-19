@@ -44,3 +44,10 @@ are too big for an embedded system.
 * syscalls/fork13 - change value of -i from 1000000 to 10000 so it will take
   bearable amount of time to complete	
 
+### Fatal tests
+
+These tests cause system to crash or hung so they must be disabled.
+
+* syscalls/sendfile04 - it is required to find why this tests causes system to hang
+* syscalls/sendfile04_64 - it is required to find why this tests causes system to hang.
+
