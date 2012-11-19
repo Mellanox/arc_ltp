@@ -76,9 +76,11 @@ should be disabled.
 
 ## Notes
 
-* sched/pth_str02 - This test will fail with current paramter "-n 1000" until
-  STAR 9000579074 will be fixed
-* fs/fs_racer* - These tests are written for bash which isn't available however
+* commands/unzip01 - tests expect different output from `unzip` however it is
+  just different words with same meaning so they cn be safely replaces in test
+* fs/fs_racer* - these tests are written for bash which isn't available however
   they doesn't use syntax unsupported by BusyBox so they run nicely if `bash`
   is replaced with `sh`.
+* sched/pth_str02 - this test will fail with current paramter "-n 1000" until
+  STAR 9000579074 will be fixed
 
