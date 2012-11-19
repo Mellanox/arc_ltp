@@ -63,6 +63,13 @@ These tests cause system to crash or hung so they must be disabled.
 These tests are not applicable to ARC Linux but are reported as failed, so they
 should be disabled.
 
+* admin_tools/su01 - requires `useradd/userdel` commands
+* admin_tools/cron02 - requires `useradd/userdel` commands
+* admin_tools/cron_deny01 - requires `useradd/userdel` commands
+* admin_tools/cron_allow01 - requires `useradd/userdel` commands
+* admin_tools/cron_dirs_checks - cron isn't available
+* admin_tools/acl_test01 - requires `mkfs` command. `mke2fs` can be used
+  instead but then it fails due to lack of `useradd`
 * commands/ar - command is unsupported on ARC Linux
 * commands/ld - command is unsupported on ARC Linux
 * commands/ldd - command is unsupported on ARC Linux
