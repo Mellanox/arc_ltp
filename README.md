@@ -102,6 +102,9 @@ should be disabled.
 * fs/fs_racer* - these tests are written for bash which isn't available however
   they doesn't use syntax unsupported by BusyBox so they run nicely if `bash`
   is replaced with `sh`.
+* mm/mmapstress06 - to pass this test requires 512 MiB RAM on board. So either
+  ARC Linux kernel image must be compiled with 512 MiB RAM or
+  ANON_GRAN_PAGES_MAX in test source code must be changed to 16U instead of 32U.
 * sched/pth_str02 - this test will fail with current paramter "-n 1000" until
   STAR 9000579074 will be fixed
 
