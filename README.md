@@ -115,4 +115,6 @@ should be disabled.
 * syscalls/epoll01 - epoll is disabled in ARC Linux by default but can be
   switched on.
 * syscalls/ioctl03 - requires /dev/net/tun device.
+* several shell scripts in Open POSIX test suite start with empty line. These
+  need to be removed so bash bang will be on the first line.
 
