@@ -114,4 +114,5 @@ should be disabled.
   be switched on.
 * syscalls/epoll01 - epoll is disabled in ARC Linux by default but can be
   switched on.
+* syscalls/ioctl03 - requires /dev/net/tun device.
 
