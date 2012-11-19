@@ -33,7 +33,7 @@ them at once provide --enable-arc-support flag to ./configure command.
 ### Tests with changed parameters
 
 These tests can be run on ARC Linux but require are different from default
-paramters because they either take too much time to execute or use values that
+parameters because they either take too much time to execute or use values that
 are too big for an embedded system.
 
 * math/float_bessel - with default parameters take too much time to finish
@@ -49,12 +49,22 @@ are too big for an embedded system.
 * sched/hackbench02 - ARC Linux has problems if amount of threads in one
   process is more that 380.
 
+
 ### Fatal tests
 
 These tests cause system to crash or hung so they must be disabled.
 
 * syscalls/sendfile04 - it is required to find why this tests causes system to hang
 * syscalls/sendfile04_64 - it is required to find why this tests causes system to hang.
+
+
+### Not applicable tests
+
+These tests are not applicable to ARC Linux but are reported as failed, so they
+should be disabled.
+
+* io/aio01 - asynchronous IO is not supported by uClibc
+* io/aio02 - asynchronous IO is not supported by uClibc
 
 
 ## Notes
