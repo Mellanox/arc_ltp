@@ -18,6 +18,18 @@ make
 sudo make install
 ```
 
+
+## Run on target
+
+```
+[ARCLinux] $ cd arc_ltp
+[ARCLinux] $ ./runltp
+```
+
+Only `runltp` configuration is supported. `runalltests.sh` and `runltplite.sh` will probably
+run some tests that may crash or hang target system or take too much time to finish.
+
+
 ## Modifications to original LTP
 
 ### Tests that cannot be built
