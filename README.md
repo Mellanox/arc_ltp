@@ -13,10 +13,13 @@ order for LTP to build and run succesfully.
 ```
 git clone git://github.com/anthony-kolesov/arc_ltp.git
 cd arc_ltp
+make autotools
 ./configure --host=arc-linux-uclibc CC=arc-linux-uclibc-gcc --enable-arc-support CFLAGS="-Dlinux -DUCLINUX"
 make
 sudo make install
 ```
+
+If you want to make out-of-tree then consult `INSTALL` for details and possible issues.
 
 
 ## Run on target
