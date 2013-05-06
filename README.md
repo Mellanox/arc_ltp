@@ -42,7 +42,10 @@ them at once provide --enable-arc-support flag to ./configure command.
 
 * controllers/cpuset
 * security/tomoyo
-* syscalls/clock_nanosleep (also must be disable in ./runtest/syscalls)
+* kernel/syscalls/clock_nanosleep (also must be disable in ./runtest/syscalls)
+* kernel/syscalls/getdents - obscolete syscall, not available on ARC
+* kernel/syscalls/sysctl - obscolete syscall, not available on ARC
+* kernel/syscalls/ustat - obscolete syscall, not available on ARC.
 
 
 ### Tests with changed parameters
